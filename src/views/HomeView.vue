@@ -17,15 +17,15 @@ export default {
   },
   data() {
     return {
-      test: 1,
-      test1: "1",
+      homeInt: 1,
+      homeString: "1",
     };
   },
   methods: {
     btnClick() {
-      this.test = this.test + 1;
-      this.test1 = "123";
-      console.log("btnClick");
+      this.homeInt = this.homeInt + 1;
+      this.homeString = "123";
+      console.log(this.homeInt, this.homeString);
     },
   },
 };

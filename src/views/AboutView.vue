@@ -8,15 +8,15 @@
 export default {
   data() {
     return {
-      ttt: 1,
-      ttt1: "1",
+      aboutInt: 1,
+      aboutString: "1",
     };
   },
   methods: {
     btnClick() {
-      this.ttt = this.ttt + 1;
-      this.ttt1 = "123";
-      console.log(this.ttt, this.ttt1);
+      this.aboutInt = this.aboutInt + 1;
+      this.aboutString = "123";
+      console.log(this.aboutInt, this.aboutString);
     },
   },
 };
