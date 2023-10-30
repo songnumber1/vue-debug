@@ -45,18 +45,26 @@ export default {
     },
   },
   methods: {
+    /**
+     * @description jsdoc handleClick입니다.
+     * @param @type {number} e
+     */
     handleClick(e) {
       /** Triggered when button is clicked
-       * @event click
+       * @event handleClick
+       * @description handleClick 입니다.
        * @type {Event}
        */
       this.$emit("click", e);
+    },
 
-      /** Event for Alligator's example
-       * @event gator
+    buttonClick(e) {
+      /** buttonClick when button is clicked
+       * @event buttonClick
+       * @description buttonClick 입니다.
        * @type {Event}
        */
-      this.$emit("gator", e);
+      this.$emit("click", e);
     },
   },
 };
