@@ -5,7 +5,9 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "styleguide": "vue-cli-service styleguidist",
+    "styleguide:build": "vue-cli-service styleguidist:build"
   },
   "dependencies": {
     "core-js": "^3.8.3",
@@ -26,7 +28,10 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.0.3",
     "prettier": "^2.4.1",
-    "vue-template-compiler": "^2.6.14"
+    "vue-cli-plugin-styleguidist": "~4.72.4",
+    "vue-styleguidist": "^4.72.4",
+    "vue-template-compiler": "^2.6.14",
+    "webpack": "^5.89.0"
   },
   "eslintConfig": {
     "root": true,
@@ -38,7 +43,6 @@
       "eslint:recommended",
       "plugin:prettier/recommended"
     ],
-    
     "rules": {}
   },
   "browserslist": [

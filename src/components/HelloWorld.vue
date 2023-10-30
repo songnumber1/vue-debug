@@ -103,6 +103,9 @@
 </template>
 
 <script>
+/**
+ * write a component's description
+ */
 export default {
   name: "HelloWorld",
   props: {

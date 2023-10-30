@@ -5,7 +5,14 @@
   </div>
 </template>
 <script>
+/**
+ * write a component's description
+ */
 export default {
+  /**
+   * @description
+   * @returns {any}
+   */
   data() {
     return {
       aboutInt: 1,
@@ -13,6 +20,9 @@ export default {
     };
   },
   methods: {
+    /**
+     * @description
+     */
     btnClick() {
       this.aboutInt = this.aboutInt + 1;
       this.aboutString = "123";
