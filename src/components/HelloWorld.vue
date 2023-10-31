@@ -104,7 +104,7 @@
 
 <script>
 /**
- * write a component's description
+ * 이 페이지는 HomeView입니다.
  */
 export default {
   name: "HelloWorld",
