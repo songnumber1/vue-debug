@@ -9,10 +9,6 @@
  * write a component's description
  */
 export default {
-  /**
-   * @description
-   * @returns {any}
-   */
   data() {
     return {
       aboutInt: 1,
@@ -21,14 +17,20 @@ export default {
   },
   methods: {
     /**
-     * @description
+     * @description btnClick입니다.
      */
     btnClick() {
       this.aboutInt = this.aboutInt + 1;
       this.aboutString = "123";
       console.log(this.aboutInt, this.aboutString);
     },
+
+    /**
+     * @description btnClick1 매서드입니다.
+     */
+    btnClick1() {
+      this.btnClick();
+    },
   },
 };
 </script>
-<style lang=""></style>

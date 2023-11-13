@@ -7,10 +7,6 @@
 </template>
 
 <script>
-/**
- * write a component's description
- */
-// @ is an alias to /src
 import HelloWorld from "@/components/HelloWorld.vue";
 
 export default {
@@ -18,10 +14,6 @@ export default {
   components: {
     HelloWorld,
   },
-  /**
-   * @description
-   * @returns {any}
-   */
   data() {
     return {
       homeInt: 1,
@@ -30,12 +22,19 @@ export default {
   },
   methods: {
     /**
-     * @description
+     * @description btnClick입니다.
+     *
      */
     btnClick() {
       this.homeInt = this.homeInt + 1;
       this.homeString = "123";
       console.log(this.homeInt, this.homeString);
+    },
+    /**
+     * @description btnClick1 매서드입니다.
+     */
+    btnClick1() {
+      this.btnClick();
     },
   },
 };
