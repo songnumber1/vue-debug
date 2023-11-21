@@ -1,6 +1,6 @@
 <template lang="">
   <div class="about">
-    <h1>AboutView</h1>
+    <h1>AboutView-1</h1>
     <button @click="btnClick">btnClick</button>
   </div>
 </template>
@@ -14,6 +14,9 @@ export default {
       aboutInt: 1,
       aboutString: "1",
     };
+  },
+  mounted() {
+    console.log("aboutView-1");
   },
   methods: {
     /**

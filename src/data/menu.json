@@ -1,12 +1,12 @@
 [
     {
 		"path": "/",
-		"name": "home",
-		"component": "views/HomeView.vue"
+		"name": "",
+		"component": "HomeView-1.vue"
 	},
     {
 		"path": "/about",
 		"name": "about",
-		"component": "views/AboutView.vue"
+		"component": "AboutView-1.vue"
 	}
 ]
