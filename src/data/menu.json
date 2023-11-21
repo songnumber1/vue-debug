@@ -1,7 +1,7 @@
 [
     {
 		"path": "/",
-		"name": "",
+		"name": "home",
 		"component": "HomeView-1.vue"
 	},
     {

@@ -1,6 +1,6 @@
 import data from "./menu.json";
 
-const menuData = (router) => {
+const menuData = (router, routes) => {
   data.forEach((element) => {
     let newRoute = {
       path: element.path,
@@ -8,10 +8,11 @@ const menuData = (router) => {
       component: () => import(`../views/${element.component}`),
     };
 
-    if (router.options.routes !== undefined) {
-      router.options.routes.push(newRoute);
+    if (routes === undefined) {
+      routes = [];
     }
 
+    routes.push(newRoute);
     router.addRoute(newRoute);
   });
 };
