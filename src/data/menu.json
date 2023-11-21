@@ -2,11 +2,13 @@
     {
 		"path": "/",
 		"name": "home",
-		"component": "HomeView-1.vue"
+		"component": "HomeView-1.vue",
+		"meta" : {"required" : true}
 	},
     {
 		"path": "/about",
 		"name": "about",
-		"component": "AboutView-1.vue"
+		"component": "AboutView-1.vue",
+		"meta" : {"required" : true}
 	}
 ]
