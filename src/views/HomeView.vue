@@ -1,13 +1,17 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png" />
-    <button @click="btnClick">btnClick</button>
+    <button @click="btnClick">btnClick</button><br />
+    <button @click="btnAxiosCall">axios Call</button><br />
+    <button @click="btnAxiosErrorCall">axios Error Call</button><br />
+
     <HelloWorld msg="Welcome to Your Vue.js App" />
   </div>
 </template>
 
 <script>
 import HelloWorld from "@/components/HelloWorld.vue";
+import axios from "@/http/axios";
 
 export default {
   name: "HomeView",
@@ -35,6 +39,34 @@ export default {
      */
     btnClick1() {
       this.btnClick();
+    },
+    /**
+     * @description axios 정상 반환 REST api를 호출합니다.
+     */
+    btnAxiosCall() {
+      axios
+        .get("/axios/test/1111111")
+        .then((res) => {
+          console.log("btnAxiosCall sucess", res);
+          //this.axiosResult = res.data.data.map((item) => item.name)
+        })
+        .catch((err) => {
+          console.log("btnAxiosCall fail", err);
+        });
+    },
+    /**
+     * @description axios 오류 반환 REST api를 호출합니다.
+     */
+    btnAxiosErrorCall() {
+      axios
+        .get("/axios/test/error/1111111")
+        .then((res) => {
+          console.log("btnAxiosCall sucess", res);
+          //this.axiosResult = res.data.data.map((item) => item.name)
+        })
+        .catch((err) => {
+          console.log("btnAxiosCall fail", err);
+        });
     },
   },
 };
