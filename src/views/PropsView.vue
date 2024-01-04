@@ -25,8 +25,8 @@ export default {
   methods: {
     searchClick(params) {
       console.log("searchClick", params);
-      this.params = JSON.stringify(params);
-      this.$refs.com2.list();
+      //this.params = JSON.stringify(params);
+      this.$refs.com2.list(params);
     },
   },
 };
