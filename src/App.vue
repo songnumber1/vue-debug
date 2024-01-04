@@ -7,6 +7,9 @@
       <br />
       <router-link to="/">Home-1</router-link> |
       <router-link to="/about">About-1</router-link>
+
+      <br />
+      <router-link to="/props">Props</router-link>
     </nav>
     <router-view />
   </div>
